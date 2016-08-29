@@ -12,20 +12,17 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let backgroundImage = UIImageView(frame: UIScreen.mainScreen().bounds)
+        let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
         backgroundImage.image = UIImage(named: "")
-        self.view.insertSubview(backgroundImage, atIndex: 0)
-        // Do any additional setup after loading the view, typically from a nib.
+        self.view.insertSubview(backgroundImage, at: 0)
+        
+        // Open link on startup
+        UIApplication.shared.openURL(URL(string: "")!)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-    @IBAction func button(sender: UIButton) {
-        UIApplication.sharedApplication().openURL(NSURL(string: "")!)
-    }
-
 }
 
