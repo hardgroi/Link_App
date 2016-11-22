@@ -1,4 +1,4 @@
-# Link_App
+# ios-basic-link-app
 Basic application that opens a link on finish of the view loading.
 
 # MIT License (MIT)
